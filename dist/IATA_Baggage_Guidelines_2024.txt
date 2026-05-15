@@ -1,0 +1,252 @@
+IATA Baggage Guidelines for Airlines: Interline Considerations on Baggage Standards (2024)
+
+SECTION 1: INTRODUCTION
+The International Air Transport Association (IATA) provides comprehensive guidance to airlines on baggage policies and handling standards. This document outlines interline considerations for baggage across all participating carriers.
+
+SECTION 2: BAGGAGE POLICY BASICS
+Airlines must establish clear baggage policies that comply with IATA standards and local regulations. Policies should cover:
+- Free baggage allowance
+- Excess baggage charges
+- Prohibited items
+- Baggage tracking procedures
+
+SECTION 3: BAGGAGE ALLOWANCE CONCEPTS
+There are two standard free baggage allowance concepts:
+
+3.1 Weight Concept
+- Measured by total weight of checked-in baggage
+- Typically 20kg, 23kg, 32kg, or 45kg per piece or total
+- Must be clearly displayed on the ticket (weight concept)
+
+3.2 Piece Concept
+- Measured by number of pieces of checked-in baggage
+- Typically 1, 2, or 3 pieces
+- Must be clearly displayed on the ticket (PC notation)
+- Dimensions typically 55x40x20cm or 62x45x25cm
+
+3.3 Combined Concepts
+- Some carriers combine weight and piece concepts
+- Example: 2 pieces not exceeding 32kg total
+- Carrier policies must be disclosed via ATPCO to all GDS systems
+
+SECTION 4: MOST SIGNIFICANT CARRIER (MSC)
+Per IATA Resolution 302, the MSC is determined as follows:
+
+4.1 Traffic Areas
+- TC1: Western Hemisphere (Americas and Caribbean)
+- TC2: Europe, Middle East, and Africa
+- TC3: Asia and Asia Pacific
+
+4.2 MSC Determination Rules
+- MSC = carrier on first sector crossing from one area to another
+- For TC1/TC2 journeys: carrier on first sector crossing TC1 and TC2
+- For multi-area journeys: apply area crossing rules in sequence
+
+4.3 Code-share Considerations
+- Marketing carrier's baggage policy prevails unless stipulated otherwise
+- Operating carrier must honor MSC baggage entitlement
+- Exception fares may alter MSC determination
+
+SECTION 5: EXCESS BAGGAGE
+Excess baggage is baggage beyond the free allowance.
+
+5.1 EMD-A Documents
+- Electronic Miscellaneous Document (EMD) Ancillary (EMD-A) is standard
+- Reason For Issuance Code: 'C' for Baggage
+- EMD-A must reference baggage details and charges
+
+5.2 Reservation Procedures
+- Create SSR XBAG in PNR for interline notification
+- Format: SSR XBAG CC NN/AMSGVA 0345M15NOV.5PIECES EACH30X25X15CM TOTL85KG
+- All participating carriers must honor SSR XBAG
+
+5.3 Legacy Procedures
+- Paper Excess Baggage Tickets permitted until May 31, 2021 for legacy carriers
+- All carriers now required to use EMD-A system
+- Transition period ended: EMD-A mandatory for all
+
+SECTION 6: OPERATIONAL HANDLING
+All airlines must implement consistent baggage handling procedures:
+
+6.1 Mandatory Scanning Points
+- Point 1: At check-in (origin)
+- Point 2: At transfer (intermediate stop)
+- Point 3: At connection point (outbound scan)
+- Point 4: At destination (final scan)
+- IATA Resolution 753 requires scanning at all 4 points
+
+6.2 Tag Placement
+- Baggage tags must be on both sides of bag
+- Agent-applied tags for checked baggage
+- Proper positioning ensures scanner readability
+
+6.3 Transfer Procedures
+- Baggage must clear security at transfer point if not through-checked
+- Airlines responsible for baggage from acceptance to final delivery
+- Through-checked baggage remains airline responsibility
+
+SECTION 7: MISHANDLED BAGGAGE
+Mishandled baggage procedures follow strict guidelines:
+
+7.1 Definition
+- Baggage delayed, lost, or damaged in transit
+- Report required within specific timeframe
+- Coverage per Montreal Convention limits apply
+
+7.2 Baggage Tracing
+- SITA WorldTracer system standard
+- Airlines using compatible systems must integrate
+- Real-time tracking mandatory for interline scenarios
+
+7.3 RUSH Baggage
+- Mishandled baggage marked as RUSH
+- Forward without charge by fastest means
+- To nearest airport within baggage recovery network
+
+7.4 Claim Processing
+- Claims received within 2 years of incident
+- Documentation required from passenger
+- Airlines determine liability per Montreal Convention
+
+7.5 Settlement
+- When responsible carrier determined: absorbs all costs
+- When unknown: shared by flown mileage (proration)
+- Settlement via IATA Clearing House (ICH)
+
+SECTION 8: PROHIBITED AND RESTRICTED ITEMS
+Airlines must enforce IATA Dangerous Goods restrictions:
+
+8.1 Prohibited in Checked Baggage
+- Explosives
+- Flammable liquids and solids
+- Oxidizers and peroxides
+- Toxic and infectious substances
+- Radioactive materials
+- Corrosive substances
+- Lithium batteries (except exceptions)
+
+8.2 Restricted Items
+- Smaller quantities allowed with restrictions
+- Passenger notification required
+- Special handling procedures apply
+
+8.3 Carry-on Restrictions
+- TSA/TSB restrictions apply in U.S.
+- European and international regulations vary
+- Airlines responsible for enforcement
+
+SECTION 9: BAGGAGE RIGHTS AND COMPENSATION
+Under Montreal Convention (2nd Protocol):
+
+9.1 Liability Limits
+- Lost baggage: SDR 1,131 (approximately USD 1,500)
+- Damage to baggage: SDR 1,131
+- Delay in baggage: SDR 408 (approximately USD 540)
+
+9.2 Proof of Loss
+- Passenger must provide:
+  - Boarding pass
+  - Baggage tag receipt
+  - Proof of damage (photos for damage claims)
+  - Receipts for essential items purchased
+
+9.3 Compensation Timeline
+- Initial response: within 30 days
+- Settlement: within 90 days where possible
+- Interest accrual: after 90 days per local law
+
+SECTION 10: BAGGAGE FEES AND REVENUE
+Standard IATA baggage fee guidelines:
+
+10.1 First Checked Bag
+- USD 25-35 typical for domestic
+- USD 40-70 typical for international
+- Excess baggage: per-pound or per-piece charges
+
+10.2 Special Services
+- Oversized baggage: surcharges apply
+- Equipment/sports equipment: special handling fees
+- Sporting goods: standard excess charges
+
+10.3 Baggage Policies Disclosure
+- Must publish in GDS (ATPCO)
+- Website display required
+- Staff training mandatory
+
+SECTION 11: BEST PRACTICES FOR CUSTOMER SERVICE
+Airlines should implement these practices:
+
+11.1 Communication
+- Clear policy messaging at all touchpoints
+- Website, airport signage, during booking
+- Multilingual support for international passengers
+
+11.2 Exception Handling
+- Authority to waive fees in hardship cases
+- Escalation procedures for disputes
+- Customer recovery programs
+
+11.3 Technology Integration
+- Real-time baggage tracking systems
+- Mobile app integration for status updates
+- Proactive customer notifications
+
+SECTION 12: REGULATORY COMPLIANCE
+Airlines must comply with:
+
+12.1 International
+- Montreal Convention (2nd Protocol)
+- IATA Resolutions (302, 753, etc.)
+- EU261/2004 regulations (where applicable)
+
+12.2 Regional
+- TSA requirements (United States)
+- EASA requirements (Europe)
+- Local jurisdiction regulations
+
+12.3 Carrier Obligations
+- Document retention: 7 years minimum
+- Audit trails for all transactions
+- Staff training and certification
+
+SECTION 13: SETTLEMENT AND BILLING
+Per IATA guidelines:
+
+13.1 Interline Settlement
+- Straight Rate Proration (SRP) method standard
+- Proration factors based on flight segments
+- Settlement through IATA Clearing House
+
+13.2 Billing Procedures
+- Invoices issued monthly
+- Payment terms: 30 days standard
+- Reconciliation processes defined
+
+13.3 Dispute Resolution
+- IATA mediation available
+- Bilateral negotiation process
+- Escalation to IATA dispute committee
+
+APPENDIX A: KEY ACRONYMS
+- MSC: Most Significant Carrier
+- EMD-A: Electronic Miscellaneous Document Ancillary
+- SSR XBAG: Special Service Request for Extra Baggage
+- SITA: Société Internationale de Télécommunications Aéronautiques
+- ATPCO: Airline Tariff Publishing Company
+- GDS: Global Distribution System
+- TC1/TC2/TC3: Traffic Areas 1, 2, 3
+- SDR: Special Drawing Right (IMF currency)
+
+APPENDIX B: QUICK REFERENCE CHECKLIST
+- Baggage allowance clearly communicated
+- MSC determined per Resolution 302
+- EMD-A system implemented for excess baggage
+- Scanning at all 4 mandatory points
+- SITA WorldTracer or compatible system in use
+- Montreal Convention limits implemented
+- Staff trained on current policies
+- Customer service procedures established
+- Policies available in GDS
+- Annual policy review scheduled
+
+END OF DOCUMENT

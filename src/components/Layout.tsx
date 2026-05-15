@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useAuth } from './AuthContext';
 import {
   Plane, LayoutDashboard, MessageSquare, Shield, FileText,
-  ClipboardList, LogOut, Menu, X, ChevronRight, Bell
+  ClipboardList, LogOut, Menu, X, ChevronRight, Bell, File
 } from 'lucide-react';
 import type { UserRole } from '../types';
 
@@ -15,6 +15,7 @@ interface LayoutProps {
 const navItems = [
   { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard, roles: ['support_agent', 'ops_manager', 'fe_engineer', 'qa_engineer', 'admin'] },
   { id: 'baggage-assistant', label: 'Baggage Policy AI', icon: MessageSquare, roles: ['support_agent', 'ops_manager', 'admin'] },
+  { id: 'document-manager', label: 'Document Manager', icon: File, roles: ['support_agent', 'ops_manager', 'admin'] },
   { id: 'accessibility', label: 'Accessibility Checker', icon: Shield, roles: ['fe_engineer', 'admin'] },
   { id: 'test-reports', label: 'Test Reports', icon: FileText, roles: ['qa_engineer', 'fe_engineer', 'admin'] },
   { id: 'audit-log', label: 'Audit Log', icon: ClipboardList, roles: ['ops_manager', 'admin'] },

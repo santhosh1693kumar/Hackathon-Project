@@ -1,8 +1,10 @@
 import { IATA_KNOWLEDGE_BASE } from './iataKnowledge';
+import { supabase } from './supabase';
 
 const AI_API_KEY = import.meta.env.VITE_AI_API_KEY || '';
 const AI_BASE_URL = import.meta.env.VITE_AI_BASE_URL || 'https://api.openai.com/v1';
 const AI_MODEL = import.meta.env.VITE_AI_MODEL || 'gpt-4o-mini';
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || '';
 
 interface AIMessage {
   role: 'system' | 'user' | 'assistant';
@@ -67,6 +69,46 @@ function generateFallbackResponse(question: string): string {
 }
 
 export async function queryIATAPolicy(question: string): Promise<{ answer: string; confidence: number; sections: string[] }> {
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    const token = session?.access_token;
+
+    if (token) {
+      try {
+        const { data: { user } } = await supabase.auth.getUser();
+        const apiUrl = `${SUPABASE_URL}/functions/v1/generate_rag_summary`;
+
+        const response = await fetch(apiUrl, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+            'X-Client-Info': 'baggage-assistant',
+          },
+          body: JSON.stringify({
+            userId: user?.id,
+            question,
+            sourceType: 'auto',
+          }),
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          const sections = extractSections(question);
+          return {
+            answer: result.answer,
+            confidence: result.confidence || 0.85,
+            sections: result.usedDocuments.length > 0 ? result.usedDocuments : sections,
+          };
+        }
+      } catch (error) {
+        console.error('RAG query failed, falling back to standard IATA query', error);
+      }
+    }
+  } catch (error) {
+    console.error('Session error:', error);
+  }
+
   const systemPrompt = `You are an expert IATA Baggage Policy Assistant for an airline's customer support team.
 You ONLY answer questions based on the IATA Guidance Document for Airlines: Interline Considerations on Baggage Standards.
 You must ONLY use information from the document provided. Do not make up or infer information beyond the document.

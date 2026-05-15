@@ -89,3 +89,37 @@ export interface AuditLog {
   ip_address: string | null;
   created_at: string;
 }
+
+export interface PDFDocument {
+  id: string;
+  user_id: string;
+  file_name: string;
+  file_size: number;
+  file_path: string;
+  document_type: 'internal' | 'iata';
+  content_preview: string | null;
+  pages_count: number;
+  upload_status: 'pending' | 'processing' | 'completed' | 'failed';
+  processing_error: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface DocumentChunk {
+  id: string;
+  document_id: string;
+  chunk_index: number;
+  chunk_text: string;
+  chunk_length: number;
+  page_number: number | null;
+  embedding_model: string;
+  created_at: string;
+}
+
+export interface RAGSummary {
+  answer: string;
+  confidence: number;
+  sources: string[];
+  usedDocuments: string[];
+  suggestedUpload?: string;
+}

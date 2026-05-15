@@ -7,6 +7,7 @@ import BaggageAssistant from './pages/BaggageAssistant';
 import AccessibilityChecker from './pages/AccessibilityChecker';
 import TestReports from './pages/TestReports';
 import AuditLog from './pages/AuditLog';
+import DocumentManager from './pages/DocumentManager';
 
 function AppContent() {
   const { user, loading } = useAuth();
@@ -39,6 +40,8 @@ function AppContent() {
         return <TestReports />;
       case 'audit-log':
         return <AuditLog />;
+      case 'document-manager':
+        return <DocumentManager />;
       default:
         return <Dashboard onNavigate={setCurrentPage} />;
     }
